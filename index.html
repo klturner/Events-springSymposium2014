@@ -12,6 +12,26 @@
 	<link rel="stylesheet" href="assets/custom.css">
 	<script src="assets/jquery.min.js"></script>
 	<script src="assets/jquery.mobile-1.4.2.min.js"></script>
+	
+	<script>
+		function checkConnection() {
+		    var networkState = navigator.connection.type;
+		
+		    var states = {};
+		    states[Connection.UNKNOWN]  = 'Unknown connection';
+		    states[Connection.ETHERNET] = 'Ethernet connection';
+		    states[Connection.WIFI]     = 'WiFi connection';
+		    states[Connection.CELL_2G]  = 'Cell 2G connection';
+		    states[Connection.CELL_3G]  = 'Cell 3G connection';
+		    states[Connection.CELL_4G]  = 'Cell 4G connection';
+		    states[Connection.CELL]     = 'Cell generic connection';
+		    states[Connection.NONE]     = 'No network connection';
+		
+		    alert('Connection type: ' + states[networkState]);
+		}
+		
+		checkConnection();		
+	</script>
 </head>
 <body>
 	
@@ -24,12 +44,11 @@
  
 	</div><!-- /leftpanel2 -->
 
-	<!-- Note: all other panels are at the end of the page, scroll down  -->
 
 	<div data-role="header" class="header">
 		<a href="#leftpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets"></a>
 		<img class="logo" src="assets/images/logo.png" />
-		<p>May 1-3 2014</p>
+		<p>May 19-21, 2014</p>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content content">

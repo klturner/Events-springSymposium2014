@@ -10,12 +10,16 @@ img{
 /* Header */
 .events .header {
 	background: #00844a;
-	padding:0 0 10px 65px;
+	padding:0 10px 10px 65px;
 	border-bottom:1px solid #006036;
+	position:fixed;
+	z-index:999;
+	width:100%;
+	box-sizing:border-box;
 }
 .events .header img.logo{
-	width:100px;
-	margin:5px 12px 0 0;
+	width:90px;
+	margin:3px 12px 0 0;
 	height:auto;
 	float:left;
 }
@@ -43,6 +47,7 @@ img{
 	text-shadow:2px 2px 3px #006036;
 	font-size:12px!important;
 	margin:20px 0 10px;
+	float:right;
 }
 .events .header .ui-btn {
 	width: 0em;
@@ -126,7 +131,7 @@ img{
 /* Content */
 .events .content {
 	font-family: 'Open Sans', sans-serif;
-	padding:4px;
+	padding:62px 4px 4px;
 	background:#eee;
 	width:100%;
 	box-sizing:border-box;
@@ -137,7 +142,7 @@ img{
 }
 
 .content .feature.wrp p{
-	font-size:16px;
+	font-size:14px;
 	left:15px;
 	bottom:10px;
 	font-weight:300;
