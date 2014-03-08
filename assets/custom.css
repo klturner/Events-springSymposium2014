@@ -5,12 +5,12 @@ img{
 /* Header */
 .events .header {
 	background: #00844a;
-	padding:0 0 10px 100px;
+	padding:0 0 10px 65px;
 	border-bottom:1px solid #006036;
 }
 .events .header img.logo{
-	width:132px;
-	margin:10px 30px 0 0;
+	width:100px;
+	margin:10px 20px 0 0;
 	height:auto;
 	float:left;
 }
@@ -31,22 +31,22 @@ img{
 .events .header h2 > img {
 	display: inline-block;
 }
-.events .header p {
+.events .header p{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	color:#fff;
 	text-shadow:2px 2px 3px #006036;
-	font-size:.9em;
-	margin:30px 0 10px;
+	font-size:12px!important;
+	margin:20px 0 10px;
 }
 .events .header .ui-btn {
-	width: 2em;
-	height: 2em;
+	width: 1.2em;
+	height: 1.2em;
 	background: #006036;
 	border: 0;
 	top: 50%;
-	left:20px;
-	margin-top: -1.6em;
+	left:10px;
+	margin-top: -1.2em;
 	-webkit-border-radius: .3125em;
 	border-radius: .3125em;
 }
@@ -330,14 +330,6 @@ img{
 	.events .header h2 img {
 		width: 275px;
 		height: 78px;
-	}
-	.events .header p {
-		bottom: auto;
-		left: auto;
-		top: 50%;
-		right: 15%;
-		font-size: 1.2em;
-		margin-top: -.625em;
 	}
 	.events .jqm-navmenu-link {
 		display: none;
