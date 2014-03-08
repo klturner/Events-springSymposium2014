@@ -1,68 +1,73 @@
-/* JQM Demos custom CSS */
+img{
+	max-width:100%;
+}
 
 /* Header */
-.jqm-demos .jqm-header {
-	background: #fff;
-	border-top: 4px solid #3eb249;
-	border-bottom-color: #eee;
+.events .header {
+	background: #00844a;
+	padding:0 0 10px 100px;
+	border-bottom:1px solid #006036;
 }
-.jqm-demos .jqm-header h2 {
+.events .header img.logo{
+	width:132px;
+	margin:10px 30px 0 0;
+	height:auto;
+	float:left;
+}
+.events .header h2 {
 	padding: .4em 0 .1em;
 	margin: 0 3em;
 }
-.jqm-demos .jqm-header h2 a {
+.events .header h2 a {
 	display: inline-block;
 	text-decoration: none;
 	min-height: 40px;
 }
-.jqm-demos .jqm-header h2 img {
+.events .header h2 img {
 	display: block;
 	width: 140px;
 	height: auto;
 }
-.jqm-demos .jqm-header h2 > img {
+.events .header h2 > img {
 	display: inline-block;
 }
-.jqm-demos .jqm-header p {
-	position: absolute;
-	bottom: -2em;
-	left: 1em;
-	margin: 0;
-	color: #666;
+.events .header p {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	text-transform: uppercase;
+	color:#fff;
+	text-shadow:2px 2px 3px #006036;
+	font-size:.9em;
+	margin:30px 0 10px;
 }
-.jqm-demos .jqm-header .ui-btn {
+.events .header .ui-btn {
 	width: 2em;
 	height: 2em;
-	background: none;
+	background: #006036;
 	border: 0;
 	top: 50%;
-	margin-top: -1em;
+	left:20px;
+	margin-top: -1.6em;
 	-webkit-border-radius: .3125em;
 	border-radius: .3125em;
-	opacity: .4;
-	filter: Alpha(Opacity=40);
 }
 
 /* Footer */
-.jqm-demos .jqm-footer.ui-footer {
+.events .jqm-footer.ui-footer {
 	position: absolute;
 	bottom: 0;
 	padding-bottom: 0;
 }
-.jqm-demos .jqm-footer {
+.events .jqm-footer {
 	border-top: 1px solid #3eb249;
 }
-.jqm-demos .jqm-footer p {
+.events .jqm-footer p {
 	font-size: .8em;
 	color: #999;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	margin: 0 1.25em 1.25em;
 }
-.jqm-demos .jqm-footer p:first-child {
+.events .jqm-footer p:first-child {
 	font-size: 1em;
 	color: #666;
 	font-weight: 400;
@@ -70,23 +75,23 @@
 }
 
 /* Content */
-.jqm-demos .jqm-content {
-	padding-top: 3em;
+.events .content {
+	padding:0;
 }
-.jqm-demos .jqm-content > h1,
-.jqm-demos .jqm-content > h2,
-.jqm-demos .jqm-content > h3,
-.jqm-demos .jqm-content > p,
-.jqm-demos .jqm-content > ul li,
-.jqm-demos .jqm-content > a {
+.events .content > h1,
+.events .content > h2,
+.events .content > h3,
+.events .content > p,
+.events .content > ul li,
+.events .content > a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
-.jqm-demos .jqm-content > h1 {
+.events .content > h1 {
 	font-size: 2.4em;
 	margin: 0 0 .625em;
 }
-.jqm-demos .jqm-content > h2 {
+.events .content > h2 {
 	color: #3eb249;
 	background-color: transparent;
 	border-bottom: 1px solid #ddd;
@@ -94,45 +99,45 @@
 	padding-bottom: .2em;
 	margin: 0 0 .7375em;
 }
-.jqm-demos .jqm-content > h3 {
+.events .content > h3 {
 	color: #3eb249;
 	background-color: transparent;
 	font-size: 1.4em;
 	margin: 0 0 1em;
 }
-.jqm-demos .jqm-content > p {
+.events .content > p {
 	font-size: 1.2em;
 	line-height: 1.5;
 }
-.jqm-demos .jqm-content > ul:not(.jqm-list) li {
+.events .content > ul:not(.jqm-list) li {
 	font-size: 1.2em;
 	line-height: 1.5;
 }
-.jqm-demos .jqm-content > p {
+.events .content > p {
 	margin: 0 0 1.25em;
 }
-.jqm-demos .jqm-content > ul,
-.jqm-demos .jqm-content > ol {
+.events .content > ul,
+.events .content > ol {
 	padding-left: 1.3em;
 }
-.jqm-demos .jqm-content > .ui-listview {
+.events .content > .ui-listview {
 	padding-left: 0;
 }
-.jqm-demos .jqm-content > a,
-.jqm-demos .jqm-content > p a,
-.jqm-demos .jqm-content > ul:not(.jqm-list) li a {
+.events .content > a,
+.events .content > p a,
+.events .content > ul:not(.jqm-list) li a {
 	font-weight: 400;
 	text-decoration: none;
 }
-.jqm-demos .jqm-content strong {
+.events .content strong {
 	font-weight: 700;
 }
-.jqm-demos .jqm-content > p strong {
+.events .content > p strong {
 	font-weight: 400;
 }
 
 /* Homepage */
-.jqm-home > .jqm-content > img {
+.jqm-home > .content > img {
 	width: 400px;
 	max-width: 100%;
 	display: block;
@@ -173,42 +178,42 @@
 }
 
 /* Code */
-.jqm-content pre,
-.jqm-content code {
+.content pre,
+.content code {
 	font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
 	background: #e5e5e5;
 	background: rgba(0,0,0,.05);
 	padding: 0 .125em;
 }
-.jqm-content pre {
+.content pre {
 	padding: 0 1em 1.2em;
 	white-space: pre-wrap;
 }
-.jqm-content pre > code {
+.content pre > code {
 	padding: 0;
 	background: none;
 	font-size: .9em;
 }
 
 /* Lists */
-.jqm-demos .jqm-search .jqm-list {
+.events .jqm-search .jqm-list {
 	margin: 0 -1em 1em;
 }
-.jqm-demos .jqm-list .ui-btn,
-.jqm-demos .jqm-list .ui-btn:visited,
-.jqm-demos .jqm-list .ui-li-divider {
+.events .jqm-list .ui-btn,
+.events .jqm-list .ui-btn:visited,
+.events .jqm-list .ui-li-divider {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	text-shadow: none !important;
 }
-.jqm-demos .jqm-list .ui-btn:hover,
-.jqm-demos .jqm-list .ui-btn:active {
+.events .jqm-list .ui-btn:hover,
+.events .jqm-list .ui-btn:active {
 	color: #3388cc;
 }
-.jqm-demos .jqm-list .ui-btn.ui-btn-active {
+.events .jqm-list .ui-btn.ui-btn-active {
 	color: #fff;
 }
-.jqm-demos .jqm-list .ui-li-divider {
+.events .jqm-list .ui-li-divider {
 	color: #3eb249;
 }
 
@@ -236,13 +241,13 @@
 	opacity: .4;
 	filter: Alpha(Opacity=40);
 }
-.jqm-demos .jqm-navmenu-panel.jqm-panel-page-nav {
+.events .jqm-navmenu-panel.jqm-panel-page-nav {
 	display: none;
 	position: absolute;
 	top: 178px;
 	left: 12px;
 }
-.jqm-demos .jqm-navmenu-panel.jqm-panel-page-nav ul li:first-child a{
+.events .jqm-navmenu-panel.jqm-panel-page-nav ul li:first-child a{
 	border-top: none;
 }
 /* Search */
@@ -280,7 +285,7 @@
 }
 
 /* Quick links */
-.jqm-demos .jqm-content .jqm-deeplink {
+.events .content .jqm-deeplink {
 	display: block;
 	color: #999;
 	font-weight: 300;
@@ -289,7 +294,7 @@
 	padding-top: .2em;
 	margin: 0 0 1.5em;
 }
-.jqm-demos .jqm-content .jqm-deeplink:after {
+.events .content .jqm-deeplink:after {
 	content: "";
 	display: block;
 	float: right;
@@ -303,30 +308,30 @@
 }
 
 /* View source links */
-.jqm-demos .jqm-content .jqm-view-source-link,
-.jqm-demos .jqm-content .jqm-view-source-link:visited,
-.jqm-demos .jqm-content .jqm-view-source-link:hover,
-.jqm-demos .jqm-content .jqm-view-source-link:active {
+.events .content .jqm-view-source-link,
+.events .content .jqm-view-source-link:visited,
+.events .content .jqm-view-source-link:hover,
+.events .content .jqm-view-source-link:active {
 	color: #3eb249;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	margin: 2em 0 1.5em 1em;
 }
-.jqm-demos .jqm-content .jqm-view-source-link.ui-btn-active:link {
+.events .content .jqm-view-source-link.ui-btn-active:link {
 	color: #fff;
 }
 
 @media (min-width: 60em) {
-	.jqm-demos .jqm-header h2 {
+	.events .header h2 {
 		padding: 1em 0 .7em;
 		margin: 0 1em 0 3%;
 		text-align: left;
 	}
-	.jqm-demos .jqm-header h2 img {
+	.events .header h2 img {
 		width: 275px;
 		height: 78px;
 	}
-	.jqm-demos .jqm-header p {
+	.events .header p {
 		bottom: auto;
 		left: auto;
 		top: 50%;
@@ -334,21 +339,21 @@
 		font-size: 1.2em;
 		margin-top: -.625em;
 	}
-	.jqm-demos .jqm-navmenu-link {
+	.events .jqm-navmenu-link {
 		display: none;
 	}
-	.jqm-demos .jqm-search-link {
+	.events .jqm-search-link {
 		right: 3%;
 	}
-	.jqm-demos .jqm-footer p {
+	.events .jqm-footer p {
 		float: right;
 		margin: 1.5em 3% 1.5em 1.5em;
 	}
-	.jqm-demos .jqm-footer p:first-child {
+	.events .jqm-footer p:first-child {
 		float: left;
 		margin: 1.25em 1.25em 1.25em 3%;
 	}
-	.jqm-demos .jqm-navmenu-panel {
+	.events .jqm-navmenu-panel {
 		visibility: visible;
 		position: relative;
 		left: 0;
@@ -371,11 +376,11 @@
 	html .jqm-demos.jqm-panel-page .jqm-navmenu-panel.jqm-panel-page-nav {
 		display: block;
 	}
-	.jqm-demos .jqm-navmenu-panel .ui-panel-inner {
+	.events .jqm-navmenu-panel .ui-panel-inner {
 		margin-top: 3em;
 		margin-bottom: 3em;
 	}
-    .jqm-demos .jqm-content.jqm-fullwidth {
+    .events .content.jqm-fullwidth {
 		width: auto;
 		padding-left: 15%;
 		padding-right: 15%;
