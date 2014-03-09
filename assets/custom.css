@@ -8,7 +8,7 @@ img{
 }
 
 /* Header */
-.events .header {
+.header {
 	background: #00844a;
 	padding:0 10px 10px 65px;
 	border-bottom:1px solid #006036;
@@ -17,30 +17,30 @@ img{
 	width:100%;
 	box-sizing:border-box;
 }
-.events .header img.logo{
+.header img.logo{
 	width:90px;
 	margin:5px 12px 0 0;
 	height:auto;
 	float:left;
 }
-.events .header h2 {
+.header h2 {
 	padding: .4em 0 .1em;
 	margin: 0 3em;
 }
-.events .header h2 a {
+.header h2 a {
 	display: inline-block;
 	text-decoration: none;
 	min-height: 40px;
 }
-.events .header h2 img {
+.header h2 img {
 	display: block;
 	width: 140px;
 	height: auto;
 }
-.events .header h2 > img {
+.header h2 > img {
 	display: inline-block;
 }
-.events .header p{
+.header p{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	color:#fff;
@@ -49,7 +49,7 @@ img{
 	margin:20px 0 10px;
 	float:right;
 }
-.events .header .ui-btn {
+.header .ui-btn {
 	width: 0em;
 	height: 1.2em;
 	background: #006036;

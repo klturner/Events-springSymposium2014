@@ -42,16 +42,23 @@
 	        //alert('Connection type: ' + states[networkState]);
 	    }
 
+	
+	
+	$( document ).bind( "mobileinit", function() {
+    	// Make your jQuery Mobile framework configuration changes here!
+    	$.mobile.allowCrossDomainPages = true;
+	});
 	</script>
 </head>
 <body>
 	
-<div data-role="page" class="events panel-page" data-quicklinks="true">
+<div data-role="page" class="events" id="home" data-quicklinks="true">
 
 	<!-- default panel  -->
 	<div data-role="panel" id="leftpanel" data-position="left" data-display="push" data-theme="a">
 
         <h3>Left Panel: Push</h3>
+        <a href="#agenda">Agenda</a>
  
 	</div><!-- /leftpanel2 -->
 
@@ -157,7 +164,20 @@
 		</section>
 	</div><!--#main-->
 
+</div><!-- /page -->
 
+<div data-role="page" class="events" id="agenda" data-quicklinks="true">
+	
+	<div data-role="header" class="header">
+		<a href="#leftpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets"></a>
+		<img class="logo" src="assets/images/logo.png" />
+		<p>May 19-21, 2014</p>
+	</div><!-- /header -->	
+	
+	<div role="main" class="ui-content content">
+		AGENDA
+	</div><!--#main-->
+	
 </div><!-- /page -->
 
 </body>
