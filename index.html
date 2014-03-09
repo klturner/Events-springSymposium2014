@@ -21,8 +21,8 @@
 		// Wait for PhoneGap to load
 	    // 
 	    document.addEventListener("deviceready", onDeviceReady, false);
-	    var pictureSource;   // picture source
-    	var destinationType; // sets the format of returned value 
+	    //var pictureSource;   // picture source
+    	//var destinationType; // sets the format of returned value 
 	
 	    // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
 	    //
@@ -87,7 +87,7 @@
 
 	<div role="main" class="ui-content content">
 		<div class="wrp feature">
-			<a onclick="window.plugins.childBrowser.showWebPage('https://www.youtube.com/watch?v=gHkaMcbPXP0',{ showLocationBar: true });" data-rel="popup" data-position-to="window" data-transition="pop">
+			<a onclick="showWebPage('https://www.youtube.com/watch?v=gHkaMcbPXP0',{ showLocationBar: true });" data-rel="popup" data-position-to="window" data-transition="pop">
 				<img src="assets/images/feature.png" />
 				<p>Learn from the experts. Network with the best.</p>
 				<div class="gradient"></div>
