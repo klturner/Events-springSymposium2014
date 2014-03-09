@@ -39,5 +39,10 @@
 	
 	<!--plugins-->
 	<gap:plugin name="org.apache.cordova.network-information" />	
+	
+    <!--
+      This allows your app to load assets from all domains
+    -->
+    <access origin="http://youtube.com" subdomains="true" />	
 
 </widget>
