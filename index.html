@@ -15,7 +15,6 @@
 	
 	<!--PHONEGAP/CORDOVA-->
 	<script src="cordova.js"></script>
-	<script src="childbrowser.js"></script>
 	
 	<script>
 		// Wait for PhoneGap to load
@@ -87,12 +86,12 @@
 
 	<div role="main" class="ui-content content">
 		<div class="wrp feature">
-			<a onclick="showWebPage('https://www.youtube.com/watch?v=gHkaMcbPXP0',{ showLocationBar: true });" data-rel="popup" data-position-to="window" data-transition="pop">
+			<span onclick="window.open('https://www.youtube.com/watch?v=gHkaMcbPXP0', '_blank', 'location=yes');">
 				<img src="assets/images/feature.png" />
 				<p>Learn from the experts. Network with the best.</p>
 				<div class="gradient"></div>
 				<div class="play"></div>
-			</a>
+			</span>
 		</div>
 		
 		<!--SPEAKER 1 POPUP-->
