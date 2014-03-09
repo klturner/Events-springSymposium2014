@@ -16,6 +16,8 @@
 	<!--PHONEGAP/CORDOVA-->
 	<script src="cordova.js"></script>
 	
+	<link rel="import" href="header.html">
+	
 	<script>
 		// Wait for PhoneGap to load
 	    // 
@@ -41,35 +43,47 @@
 	
 	        //alert('Connection type: ' + states[networkState]);
 	    }
+	    
+	    function takePicture(){
+			navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+			    destinationType: Camera.DestinationType.DATA_URL
+			});
+		}
+		
+		function onSuccess(imageData) {
+		    var image = document.getElementById('myImage');
+		    image.src = "data:image/jpeg;base64," + imageData;
+		}
+		
+		function onFail(message) {
+		    alert('Failed because: ' + message);
+		}	    
 
 	
-	
-	$( document ).bind( "mobileinit", function() {
-    	// Make your jQuery Mobile framework configuration changes here!
-    	$.mobile.allowCrossDomainPages = true;
-	});
+		$( document ).bind( "mobileinit", function() {
+	    	// Make your jQuery Mobile framework configuration changes here!
+	    	$.mobile.allowCrossDomainPages = true;
+		});
 	</script>
 </head>
 <body>
-	
-<div data-role="page" class="events" id="home" data-quicklinks="true">
 
+<div data-role="page" class="events" id="home" data-quicklinks="true">
+	
 	<!-- default panel  -->
 	<div data-role="panel" id="leftpanel" data-position="left" data-display="push" data-theme="a">
-
-        <h3>Left Panel: Push</h3>
-        <a href="#agenda">Agenda</a>
- 
-	</div><!-- /leftpanel2 -->
-
+	    <h3>Left Panel: Push</h3>
+	    <a href="#agenda">Agenda</a>
+	</div><!-- /leftpanel2 -->	
 
 	<div data-role="header" class="header">
 		<a href="#leftpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets"></a>
 		<img class="logo" src="assets/images/logo.png" />
-		<p>May 19-21, 2014</p>
+		<p onclick="takePicture()">May 19-21, 2014</p>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content content">
+		
 		<div class="wrp feature">
 			<a href="#video" data-rel="popup" data-position-to="window" data-transition="pop">
 				<img src="assets/images/feature.png" />

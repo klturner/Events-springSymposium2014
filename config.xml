@@ -20,7 +20,7 @@
         Randall-Reilly 
     </author>
     
-    <!--<preference name="orientation" value="portrait" />-->
+    <preference name="orientation" value="portrait" />
     <preference name="exit-on-suspend" value="true" />
     
     <!-- IOS Icons-->
@@ -39,6 +39,7 @@
 	
 	<!--plugins-->
 	<gap:plugin name="org.apache.cordova.network-information" />	
+	<gap:plugin name="org.apache.cordova.camera" />
 	
     <!--
       This allows your app to load assets from all domains
