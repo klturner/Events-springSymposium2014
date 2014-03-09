@@ -27,6 +27,8 @@
 	    //
 	    function onDeviceReady() {
 	        checkConnection();
+        	pictureSource=navigator.camera.PictureSourceType;
+        	destinationType=navigator.camera.DestinationType;	        
 	    }
 	
 	    function checkConnection() {
@@ -44,21 +46,11 @@
 	        //alert('Connection type: ' + states[networkState]);
 	    }
 	    
-	    function takePicture(){
-			navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-			    destinationType: Camera.DestinationType.DATA_URL
-			});
-		}
-		
-		function onSuccess(imageData) {
-		    var image = document.getElementById('myImage');
-		    image.src = "data:image/jpeg;base64," + imageData;
-		}
-		
-		function onFail(message) {
-		    alert('Failed because: ' + message);
+		function capturePhoto() {
+			// Take picture using device camera and retrieve image as base64-encoded string
+			navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
+			destinationType: destinationType.DATA_URL });
 		}	    
-
 	
 		$( document ).bind( "mobileinit", function() {
 	    	// Make your jQuery Mobile framework configuration changes here!
@@ -79,7 +71,7 @@
 	<div data-role="header" class="header">
 		<a href="#leftpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets"></a>
 		<img class="logo" src="assets/images/logo.png" />
-		<p onclick="takePicture()">May 19-21, 2014</p>
+		<p onclick="capturePhoto();">May 19-21, 2014</p>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content content">
