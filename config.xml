@@ -20,7 +20,7 @@
         Randall-Reilly 
     </author>
     
-    <preference name="orientation" value="portrait" />
+    <!--<preference name="orientation" value="portrait" />-->
     <preference name="exit-on-suspend" value="true" />
     
     <!-- IOS Icons-->
