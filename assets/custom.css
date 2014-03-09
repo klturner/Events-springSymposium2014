@@ -7,13 +7,13 @@ img{
 	height:0;
 }
 
-.ui-btn-icon-left:after{
+.header .ui-btn-icon-left:after{
 	background-color:transparent!important;
 }
 
 .header .ui-btn,
-.ui-page-theme-a .ui-btn,
-.ui-page-theme-a .ui-btn:hover{
+.header .ui-page-theme-a .ui-btn,
+.header .ui-page-theme-a .ui-btn:hover{
 	background:transparent!important;
 	box-shadow:none;
 }
@@ -120,13 +120,14 @@ img{
 
 .wrp p{
 	position:absolute;
-	bottom:5px;
-	left:5px;
 	margin:0;
 	color:#fff;
-	font-size:11px;
 	text-shadow:none;
 	z-index:10;
+	font-size:14px;
+	left:10px;
+	bottom:10px;
+	font-weight:300;	
 }
 
 .play{
@@ -153,13 +154,6 @@ img{
 	display:block;
 }
 
-.content .feature.wrp p{
-	font-size:14px;
-	left:10px;
-	bottom:10px;
-	font-weight:300;
-}
-
 .speakers{
 	padding:4px 0;
 }
@@ -170,11 +164,18 @@ img{
 
 .speakers .wrp{
 	float:left;
-	width:50%;
-	margin:0 0 0 0;
+	width:49.3%;
+	margin-bottom:4px;
+}
+
+.speakers .wrp:nth-child(2),
+.speakers .wrp:nth-child(4){
+	float:right;
 }
 
 .speakers .wrp img{
 	display:block;
+	width:100%;
+	box-sizing:border-box;
 }
 

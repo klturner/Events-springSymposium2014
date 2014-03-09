@@ -61,6 +61,16 @@
 			alert('failed');
 		}   
 		*/
+		
+		// Get element holding the video (embed or object)
+		
+		//Create a simple function and check if player exists
+		function youtube_play(id) {
+			var player = document.getElementById(id);
+		    if(player) {
+		        player.playVideo();
+		    }
+		}		
 	
 		$( document ).bind( "mobileinit", function() {
 	    	// Make your jQuery Mobile framework configuration changes here!
@@ -105,6 +115,22 @@
 				</a>
 			</div>
 			
+			<div class="wrp">
+				<a href="#speaker2" data-rel="popup" data-position-to="window" data-transition="pop">
+					<img src="assets/images/speaker2.png" />
+					<p>Shepard Dunn</p>
+					<div class="gradient"></div>
+				</a>
+			</div>			
+			
+			<div class="wrp">
+				<a href="#speaker3" data-rel="popup" data-position-to="window" data-transition="pop">
+					<img src="assets/images/speaker3.png" />
+					<p>Brent Nussbaum</p>
+					<div class="gradient"></div>
+				</a>
+			</div>
+			
 			<!--SPEAKER 1 POPUP-->
 			<div data-role="popup" id="speaker1" data-overlay-theme="a" data-theme="a" style="max-width:400px;">
 				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
@@ -118,15 +144,7 @@
 			        	began driving a truck and then transitioned into the operations department.</p>
 			    </div>
 			</div>	
-			<!--END POPUP-->			
-			
-			<div class="wrp">
-				<a href="#speaker2" data-rel="popup" data-position-to="window" data-transition="pop">
-					<img src="assets/images/speaker2.png" />
-					<p>Shepard Dunn</p>
-					<div class="gradient"></div>
-				</a>
-			</div>
+			<!--END POPUP-->						
 			
 			<!--SPEAKER 2 POPUP-->
 			<div data-role="popup" id="speaker2" data-overlay-theme="a" data-theme="a" style="max-width:400px;">
@@ -142,14 +160,6 @@
 			    </div>
 			</div>	
 			<!--END POPUP-->			
-			
-			<div class="wrp">
-				<a href="#speaker3" data-rel="popup" data-position-to="window" data-transition="pop">
-					<img src="assets/images/speaker3.png" />
-					<p>Brent Nussbaum</p>
-					<div class="gradient"></div>
-				</a>
-			</div>
 
 			<!--SPEAKER 3 POPUP-->
 			<div data-role="popup" id="speaker3" data-overlay-theme="a" data-theme="a" style="max-width:400px;">
@@ -177,11 +187,17 @@
 	
 	<div data-role="header" class="header">
 		<a href="#leftpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets"></a>
-		<img class="logo" src="assets/images/logo.png" />
-		<p>May 19-21, 2014</p>
+		Agenda
 	</div><!-- /header -->	
 	
 	<div role="main" class="ui-content content">
+		<div data-role="navbar">
+		    <ul>
+		        <li><a href="#" class="ui-btn-active">Monday</a></li>
+		        <li><a href="#">Tuesday</a></li>
+		        <li><a href="#">Wednesday</a></li>
+		    </ul>
+		</div><!-- /navbar -->
 		AGENDA
 	</div><!--#main-->
 	
