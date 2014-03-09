@@ -22,6 +22,8 @@
 		// Wait for PhoneGap to load
 	    // 
 	    document.addEventListener("deviceready", onDeviceReady, false);
+	    var pictureSource;   // picture source
+    	var destinationType; // sets the format of returned value 
 	
 	    // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
 	    //
@@ -71,7 +73,8 @@
 	<div data-role="header" class="header">
 		<a href="#leftpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets"></a>
 		<img class="logo" src="assets/images/logo.png" />
-		<p onclick="capturePhoto();">May 19-21, 2014</p>
+		<p>May 19-21, 2014</p>
+		<button onclick="capturePhoto();">Capture Photo</button>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content content">
