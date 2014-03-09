@@ -7,6 +7,10 @@ img{
 	height:0;
 }
 
+.ui-page-theme-a .ui-btn:hover{
+	background:#006036;
+}
+
 /* Header */
 .header {
 	background: #00844a;
@@ -16,6 +20,7 @@ img{
 	z-index:999;
 	width:100%;
 	box-sizing:border-box;
+	height:60px;
 }
 .header img.logo{
 	width:90px;
