@@ -42,7 +42,7 @@
 	
     <!--
       This allows your app to load assets from all domains
-    -->
-    <access origin="http://youtube.com" subdomains="true" />	
+    -->	
+    <access origin="*" />
 
 </widget>
