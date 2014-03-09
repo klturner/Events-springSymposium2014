@@ -45,12 +45,7 @@
 	        states[Connection.NONE]     = 'No network connection';
 	
 	        //alert('Connection type: ' + states[networkState]);
-	    }
-	    
-		function youtube(url){
-			var you = window.open(url, '_self', 'location=no');
-			you.close();
-		}	    
+	    }  
 	    
 	    /* CAMERA FUNCTIONS
 		function capturePhoto() {
@@ -91,22 +86,13 @@
 
 	<div role="main" class="ui-content content">
 		<div class="wrp feature">
-			<a href="#" onclick="youtube('http://m.youtube.com')">
+			<a href="http://www.youtube-nocookie.com/embed/gHkaMcbPXP0?rel=0" data-rel="dialog">
 				<img src="assets/images/feature.png" />
 				<p>Learn from the experts. Network with the best.</p>
 				<div class="gradient"></div>
 				<div class="play"></div>
 			</a>
-		</div>
-		
-		<!--SPEAKER 1 POPUP-->
-		<div data-role="popup" id="video" data-overlay-theme="a" data-theme="a" style="max-width:400px;">
-			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-		    <div role="main" class="ui-content">
-		       <iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/gHkaMcbPXP0?rel=0" frameborder="0" allowfullscreen></iframe>
-		    </div>
-		</div>	
-		<!--END POPUP-->			
+		</div>		
 		
 		<div class="clearer"></div>
 		
